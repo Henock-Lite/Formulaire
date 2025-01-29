@@ -1,0 +1,135 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.title{
+    text-align: center;
+    h1{
+        text-transform: capitalize;
+        font-size: 1.5em;
+        font-style: italic;
+    }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+input[type="date"] {
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: rgb(237, 89, 73);
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox-container div {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.checkbox-container label {
+  font-weight: normal;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 2px solid black;
+  border-radius: 50%;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: rgb(237, 89, 73);
+}
+
+button {
+  background: salmon;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: capitalize;
+  margin: 4px 0;
+}
+
+button:hover {
+  background: rgb(237, 89, 73);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  section {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
