@@ -27,7 +27,7 @@
 
         <div class="telephone-container">
           <label for="text">Mots de passes</label>
-          <input type="text" id="text" />
+          <input type="text" id="password" />
           <span class="error"></span>
         </div>
 
@@ -40,9 +40,9 @@
         <div class="checkbox-container">
           <div>genre</div>
           <label for="homme">Homme</label>
-          <input type="radio" value="Homme" id="homme"  name="genre"/>
+          <input type="radio" value="Homme" id="genreMen"  name="genre"/>
           <label for="femme">Femme</label>
-          <input type="radio" value="Femme" id="femme"  value="Femme" name="genre"/>
+          <input type="radio" value="Femme" id="genreFemme"  value="Femme" name="genre"/>
           <span class="error"></span>
         </div>
 
@@ -51,12 +51,13 @@
           <input type="date" name="date" id="date"  />
         </div>
 
-        <div class="send-container">
-          <button>enregistrer</button>
+        <div class="send-container" id="confirm">
+          <input type="submit" id="button" value="enregistrer">
         </div>
 
         <!-- alert de confirmation -->
       </form>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>

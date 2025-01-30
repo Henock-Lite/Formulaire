@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +68,9 @@ input[type="date"]:focus {
   border-color: rgb(237, 89, 73);
 }
 
+/* input[type="date"]{
+  background:coral;
+} */
 .error {
   font-size: 12px;
   color: red;
@@ -105,7 +108,7 @@ input[type="radio"]:checked {
   background-color: rgb(237, 89, 73);
 }
 
-button {
+#button {
   background: salmon;
   color: #ffffff;
   border: none;
@@ -119,11 +122,10 @@ button {
   margin: 4px 0;
 }
 
-button:hover {
+#button:hover {
   background: rgb(237, 89, 73);
 }
 
-/* Responsive Design */
 @media (max-width: 480px) {
   section {
     padding: 10px;
