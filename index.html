@@ -3,35 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Form</title>
   </head>
   <body>
-    <section>
       <form action="#">
-        <div class="title">
+        <!-- <div class="title">
           <h1>Formulaire d'inscription</h1>
-        </div>
+        </div> -->
 
-        <div class="nom-container">
+        <div class="nom-container  maincontenair">
           <label for="nom">Nom</label>
           <input type="text" id="nom" />
-          <span class="error"></span>
+          <span> </span>
         </div>
 
-        <div class="prenom-container">
+        <div class="prenom-container  maincontenair">
           <label for="prenom">prenom</label>
           <input type="text" id="prenom" />
-          <span class="error"></span>
+          <span></span>
         </div>
 
-        <div class="telephone-container">
+        <div class="telephone-container  maincontenair">
           <label for="text">Mots de passes</label>
           <input type="text" id="password" />
-          <span class="error"></span>
+          <span></span>
         </div>
 
-        <div class="email-container">
+        <div class="email-container   maincontenair">
           <label for="email">Email</label>
           <input type="text" id="email" />
           <span></span>
@@ -39,25 +38,33 @@
 
         <div class="checkbox-container">
           <div>genre</div>
+          <div>
           <label for="homme">Homme</label>
-          <input type="radio" value="Homme" id="genreMen"  name="genre"/>
-          <label for="femme">Femme</label>
-          <input type="radio" value="Femme" id="genreFemme"  value="Femme" name="genre"/>
-          <span class="error"></span>
+            <input type="radio" value="Homme" id="genreMen" name="genre" />
+            <label for="femme">Femme</label>
+            <input
+            type="radio"
+            value="Femme"
+            id="genreFemme"
+            value="Femme"
+            name="genre"
+            />
+            <span></span>
+          </div>
         </div>
 
-        <div class="annive-container">
+        <div class="annive-container  maincontenair">
           <div>Date d'anniversaire</div>
-          <input type="date" name="date" id="date"  />
+          <input type="date" name="date" id="date" />
+          <span></span>
         </div>
 
         <div class="send-container" id="confirm">
-          <input type="submit" id="button" value="enregistrer">
+          <input type="submit" id="button" value="enregistrer" />
         </div>
 
         <!-- alert de confirmation -->
       </form>
-    </section>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -1,54 +1,74 @@
-const input = document.querySelectorAll("input");
+// const input = document.querySelectorAll("input");
+// function error(tag, message, valid) {
+//   let container = document.querySelector("." + tag + "-container");
+//   let span = document.querySelector("." + tag + "-container > span ");
 
-function nom(value) {}
+//   if (!valid) {
+//     container.classList.add("error");
+//   } else {
+//     container.classList.remove("error");
+//     span.textContent = message;
+//   }
+// }
 
-function prenom(value) {}
+// function nom(value) {
+//   if ((value.length > 0 && value.length < 3) || value.length > 20) {
+//     error("nom", "Le nom doit faire entre 3 et 20 caractères");
+//   } else if(!value.match(/^[a-zA-Z0-9-_.]*$/)){
+//   }
+//   else {
+//     error("nom", "", true);
+//   }
+// }
 
-function password(value) {}
+// function prenom(value) {}
 
-function email(value) {}
+// function password(value) {}
 
-function genreMen(value) {}
+// function email(value) {}
 
-function genreFemme(value) {}
+// function genreMen(value) {}
 
-function date(value) {}
+// function genreFemme(value) {}
 
-function enregistrer(value) {}
+// function date(value) {}
 
+// function enregistrer(value) {}
 
-function Button(){}
+// function Button() {}
 
-input.forEach((input) => {
-  input.addEventListener("input", (e) => {
-    switch (e.target.id) {
-      case "nom":
-        nom(e.target.value);
-        break;
+// input.forEach((input) => {
+//   input.addEventListener("input", (e) => {
+//     switch (e.target.id) {
+//       case "nom":
+//         nom(e.target.value);
+//         break;
 
-      case "prenom":
-        prenom(e.target.value);
-        break;
+//       case "prenom":
+//         prenom(e.target.value);
+//         break;
 
-      case "password":
-        password(e.target.value);
-        break;
+//       case "password":
+//         password(e.target.value);
+//         break;
 
-      case "email":
-        email(e.target.value);
-        break;
+//       case "email":
+//         email(e.target.value);
+//         break;
 
-      case "genreMen":
-        genreMen(e.target.value);
-        break;
+//       case "genreMen":
+//         genreMen(e.target.value);
+//         break;
 
-      case "genreFemme":
-        genreFemme(e.target.value);
-        break;
+//       case "genreFemme":
+//         genreFemme(e.target.value);
+//         break;
 
-      case "date":
-        date(e.target.id);
-        break;
-    }
-  });
-});
+//       case "date":
+//         date(e.target.id);
+//         break;
+//       default:
+//         break;
+//     }
+//   });
+// });
